@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Warunkowe</title>
+        <meta charset = 'UTF-8'>
+    </head>
+
+    <body>
+        <script>
+            function register(form) {
+                if(form.password.value == form.rpassword.value) {
+                    alert('Hasla sie zgadzaja');
+                }
+                else {
+                    alert('Hasla sie nie zgadzaja');
+                }
+            }
+        </script>  
+            <form name='form'>
+            Podaj login: <input type='text' name='login' size='6'><br/><br/>
+            Podaj haslo: <input type='password' name='password' size='6'><br/><br/>
+            Powtorz haslo: <input type='password' name='rpassword' size='6'><br/><br/>
+            <input id='register' type='submit' name='register' value='Zarejestruj' onClick='register'>
+            <input id='clear' type='submit' value='Wyczysc'></form>
+    </body>
+
+</html>

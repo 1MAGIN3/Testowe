@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Trojkat</title>
+        <meta charset = 'UTF-8'>
+    </head>
+
+    <body>
+        <script>
+
+        let a = prompt('Podaj a');
+        let b = prompt('Podaj b');
+        let c = prompt('Podaj c');
+
+        if (a == b && b == c) {
+            alert('Trojkat rownoboczny')
+        }
+        else if(a == b || b == c || a == c) {
+            alert('Rownoramienny');
+        }
+        else {
+            alert('Roznoboczny');
+        }
+        </script>  
+    </body>
+
+</html>
